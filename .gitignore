@@ -1,0 +1,8 @@
+.VSCodeCounter/*
+.vscode/*
+__pycache__/*
+*.txt
+analysis/*
+data/*
+*.png
+*.xlsx
