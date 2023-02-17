@@ -22,6 +22,7 @@ import yfinance as yf
 
 from constants import *
 from scoring import *
+from credentials import *
 
 
 class Scraper:
@@ -77,6 +78,9 @@ class Scraper:
         time.sleep(0.5)
         [user, passwd] = self.driver.find_elements(
             By.XPATH, "//main/div/form/input")
+
+        user.send_keys(EMAIL)
+        passwd.send_keys(PASSWD)
 
         form = self.driver.find_elements(By.XPATH, "//main/div/form")
         form[0].submit()
