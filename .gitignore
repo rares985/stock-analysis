@@ -1,3 +1,12 @@
+.VSCodeCounter/*
+.vscode/*
+__pycache__/*
+*.txt
+analysis/*
+data/*
+*.png
+*.xlsx
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
